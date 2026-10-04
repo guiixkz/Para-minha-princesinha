@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Para você ❤️</title>
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: light-dark(#fff7fb, #1d151b);
+  --surface: light-dark(#ffffff, #2a2027);
+  --text: light-dark(#3a2530, #fff3f8);
+  --muted: light-dark(#806875, #cdb7c1);
+  --accent: light-dark(#d94f86, #ff82ad);
+  --accent-soft: light-dark(#ffe1ec, #492735);
+  --border: light-dark(#f0cbd9, #553541);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Georgia, 'Times New Roman', serif; background: var(--bg); color: var(--text); }
+#app { min-height: 100vh; background: var(--bg); }
+.hero { min-height: 92vh; display: grid; place-items: center; padding: 40px 20px; text-align: center; background: radial-gradient(circle at 50% 20%, var(--accent-soft), transparent 45%); }
+.hero-inner { max-width: 760px; }
+.heart { font-size: 3rem; animation: float 3s ease-in-out infinite; }
+h1 { font-size: clamp(2.6rem, 8vw, 5.5rem); line-height: .95; margin: 16px 0; }
+.hero p { font-size: 1.2rem; color: var(--muted); line-height: 1.7; }
+.button { display: inline-block; margin-top: 18px; padding: 13px 22px; border-radius: 999px; background: var(--accent); color: white; text-decoration: none; font-family: Arial, sans-serif; font-weight: 700; box-shadow: 0 10px 25px color-mix(in srgb, var(--accent) 25%, transparent); }
+main { max-width: 1050px; margin: 0 auto; padding: 70px 20px; }
+section { margin-bottom: 90px; }
+.section-title { text-align: center; font-size: 2rem; margin-bottom: 12px; }
+.section-subtitle { text-align: center; color: var(--muted); margin: 0 auto 35px; max-width: 650px; line-height: 1.7; }
+.letter { max-width: 760px; margin: auto; background: var(--surface); border: 1px solid var(--border); border-radius: 24px; padding: clamp(25px, 5vw, 50px); box-shadow: 0 18px 45px color-mix(in srgb, var(--text) 7%, transparent); line-height: 1.9; font-size: 1.08rem; }
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.photo { aspect-ratio: 1 / 1; border-radius: 20px; border: 1px dashed var(--border); background: var(--accent-soft); display: grid; place-items: center; text-align: center; padding: 15px; color: var(--muted); overflow: hidden; }
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.timeline { max-width: 760px; margin: auto; display: grid; gap: 14px; }
+.memory { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 20px; }
+.memory strong { color: var(--accent); font-family: Arial, sans-serif; font-size: .85rem; }
+.memory p { margin-bottom: 0; line-height: 1.6; }
+footer { text-align: center; padding: 35px 20px 55px; color: var(--muted); }
+@keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+@media (max-width: 700px) { .gallery { grid-template-columns: 1fr 1fr; } .gallery .photo:last-child { grid-column: span 2; } }
+@media (max-width: 460px) { .gallery { grid-template-columns: 1fr; } .gallery .photo:last-child { grid-column: auto; } }
+</style>
+</head>
+<body>
+<div id="app">
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="heart">♡</div>
+      <p>Uma surpresinha feita especialmente para você</p>
+      <h1>Para o amor da minha vida.</h1>
+      <p>Eu gostaria de guardar em algum lugarzinho, pequenos momentos nossos que significam muito pra mim, para nunca esquecermos do que passamos juntos.</p>
+      <a class="button" href="#carta">Ler minha cartinha ↓</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="carta">
+      <h2 class="section-title">Uma cartinha para você <3 </h2>
+      <p class="section-subtitle"></p>
+      <div class="letter">
+        <p>Oi, minha princesa. ❤️</p>
+        <p>O motivo de eu ter criado esse site foi justamente para criar uma surpresa pra vc, como nao podemos nos encontrar ainda, é o mínimo que eu poderia fazer por você. Espero que goste :p </p>
+        <p>Desde o momento que você chegou na minha vida, tudo fez sentido, como eu disse, Deus coloca em nossa vida as melhores pessoas quando a gente menos espera, eu só tenho a agradecer por tudo q vc tem feito na minha vida, eu sinto uma felicidade que não sinto a tempo, com vc, tudo é mais fácil. Eu espero ansiosamente pelo momento em que a gente irá se encontrar, eu espero tanto por isso, eu preciso muito de você por perto.</p>
+        <p>Só tenho a agradecer a Deus por ter você na minha vida, eu te amo muito meu amor, Espero que, quando você abrir isso, dê aquele sorrisinho que eu amaria ver pessoalmente.</p>
+        <p>Com carinho,<br><strong>Gui (ou raposinha kk). ❤️</strong></p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Nossos pequenos momentos 📸</h2>
+      <p class="section-subtitle">Apenas uns momentinhos bobos, sei que não são muitos, mas em breve, quando se encontrarmos, terá muitas fotos nossa.</p>
+      <div class="gallery">
+        <div class="photo">📷<br><div class="card">
+  <img src="imagens/foto5.jpg" alt="Foto">
+  <p class="legenda">Aki ja tinha algo, eu so nao podia provar kk ❤️</p>
+</div></div>
+        <div class="photo">📷<br><div class="card">
+  <img src="imagens/foto9.png" alt="Foto">
+  <p class="legenda"> O pedido, em breve será pessoalmente hihi ❤️</p>
+</div></div>
+<div class="photo">📷<br><div class="card">
+  <img src="imagens/foto20.jpeg" alt="Foto">
+  <p class="legenda"> amo tudo isso ❤️❤️</p>
+</div></div>
+      </div>
+    </section>
+    <section>
+      <h2 class="section-title">Coisas que eu sempre quis dizer ✨</h2>
+      <p class="section-subtitle">Resumo de nós até aki.</p>
+      <div class="timeline">
+        <div class="memory"><strong>O começo</strong><p>Quem diria que nossa história começaria assim de repente, oq era pra ser uma simples chamada com uma amiga, futuramente, se tornou uma baita amizade e, hoje, um lindo relacionamento. Desde o inicio, desde que te vi pela primeira vez, confesso que o coração deu uma acelerada kkkkk, vc é linda até demais garota, e sua índole é invejável. Sem sombra de dúvidas a melhor pessoa que eu poderia ter conhecido na minha vida. Mas uma acelerada no coração não poderia significar tudo né? Eu evitei ao máximo desenvolver sentimentos por você, eu tinha medo de que pudesse, de alguma forma, ser rejeitado e perder sua amizade apenas por uma confissão. Mas o tempo revelou tudo, e o que eu imaginei impossível, se tornou possível. Você sempre será a minha melhor escolha. 💜💜💜💜 </p></div>
+        <div class="memory"><strong>Um momento inesquecível</strong><p>O momento mais inesquecível que nunca esqueço, foi logo no inicio, quando conversamos por muito tempo sobre tudo, viramos a noite e no fim fomos dormir felizes pq uma íncrivel amizade tinha se iniciado, foi um dia sensacional, sem dúvidas. Mas óbviamente teve muitos e muitos dias inesquecíveis com você. </p></div>
+        <div class="memory"><strong>Hoje</strong><p>Eu nao consigo nem explicar como eu me sinto quando estou com você, todo o peso do mundo, a pressão constante, tudo some, a vida fica bem mais leve e divertida com você. Hoje você é a pessoa mais importante da minha vida, eu não sei o que eu faria sem você, eu te amo tanto meu amor. Eu genuinamente não sei como explicar o quanto eu te amo. Às vezes eu paro pra pensar em tudo que aconteceu desde que você entrou na minha vida e parece até estranho tentar colocar tudo isso em palavras.
+
+Porque não é só sobre eu gostar de você. É sobre o quanto você se tornou importante pra mim. É sobre como conversar com você consegue mudar completamente o meu dia, como eu lembro de pequenas coisas que você fala, como certos momentos nossos ficam na minha cabeça muito depois de acontecerem.
+
+Eu amo você nos detalhes. Nas nossas conversas, nas nossas brincadeiras, nas nossas provocações, nos apelidos, nas vezes em que a gente simplesmente fica junto fazendo qualquer coisa. Amo a forma como você consegue me fazer sentir querido e, ao mesmo tempo, como eu sinto vontade de fazer você se sentir querida também.
+
+E talvez seja justamente isso que torne tão difícil explicar. Eu poderia escrever páginas e ainda sentir que faltou alguma coisa. Porque o que eu sinto por você não cabe muito bem em uma frase bonita. É algo que eu percebo nas pequenas coisas, no quanto eu penso em você, no quanto eu me importo com você e no quanto eu quero continuar tendo você na minha vida. A forma como você me trata, garota, eu me sinto o homem mais feliz do mundo tendo você, tudo em você consegue ser perfeito, eu nunca sequer pensei em algum defeito seu, sei que todos possuem, mas eu nao consigo enxergar eles em você, cada dia, cada momento, cada lembrança, cada conversa, tudo que a gente passa faz com que  eu te ame infinitas vezes mais que no dia anterior. Eu te amo meu bem, Hoje, Amanhã e sempre.</p></div>
+        <div class="memory"><strong>Daqui para frente</strong><p>Daqui pra frente, eu espero que tudo entre a gente sempre funcione da forma que desejamos. espero que possamos superar cada obstáculo nessa longa e dificil jornada. quero que você saiba que eu sempre estarei aki para ti, eu sempre irei te ouvir, te escutar, te compreender, e mesmo quando eu não souber o que fazer, o que te dizer, eu espero que vc veja todo o meu carinho por você nas minhas ações. Você é a mulher da minha vida, oro todo dia para que nosso relacionamento flua com leveza e que seja construído na base da confiança, lealdade, harmonia e acima de tudo, respeito. Quero que você seja minha esposa e mãe dos meus filhos. EU TE AMO EM MILHÕES. 💜💜💜  </p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>Feito com carinho, especialmente para o amor da minha vida, Ana Júlia. ♡</footer>
+</div>
+<script>
+</body>
+</html>
